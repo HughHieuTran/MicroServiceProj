@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/HughHieuTran/microspirng-app-config.git
+          uri: https://github.com/HughHieuTran/microspring-app-config.git
           clone-on-start: true
 
 

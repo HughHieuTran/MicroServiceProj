@@ -13,6 +13,8 @@ spring:
     show-sql: true
   application:
     name: ORDER_SERVICE
+  config:
+    import: configserver:http://localhost:9296
 
 
 #eureka:
