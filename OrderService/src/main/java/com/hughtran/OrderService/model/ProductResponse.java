@@ -5,17 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import java.time.Instant;
-
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class OrderRequest {
+@AllArgsConstructor
+public class ProductResponse {
+    private String productName;
     private long productId;
     private long quantity;
-    private long totalAmount;
-    private PaymentMode paymentMode;
-
+    private long price;
 }

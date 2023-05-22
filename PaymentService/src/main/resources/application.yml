@@ -12,7 +12,7 @@ spring:
     generate-ddl: true
     show-sql: true
   application:
-    name: PAYMENT_SERVICE
+    name: PAYMENT-SERVICE
   config:
     import: configserver:http://localhost:9296
 

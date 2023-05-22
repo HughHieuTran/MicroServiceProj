@@ -12,7 +12,7 @@ spring:
     generate-ddl: true
     show-sql: true
   application:
-    name: PRODUCT_SERVICE
+    name: PRODUCT-SERVICE
   config:
     import: configserver:http://localhost:9296
 
