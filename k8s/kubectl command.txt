@@ -1,0 +1,47 @@
+kubectl start
+-------------------------------------------
+kubectl get all 
+kubectl get all -o wide
+
+kubectl get pods
+
+kubectl get deployment
+
+kubectl get services
+
+kubectl get namespaces
+
+kubectl delete all --all
+
+------------------------------------------------
+
+kubectl create -h
+
+kubectl create deployment nginx --image=nginx
+
+kubectl describe deployment nginx
+kubectl describe pod nginx-8f458dc5b-8jl4z
+
+kubectl exec -it nginx-8f458dc5b-8jl4z -- /bin/bash
+
+kubectl logs nginx-8f458dc5b-8jl4z
+
+kubectl edit deployment
+
+-----------------------------------------------------
+
+kubectl apply -f .\deploy.yaml
+kubectl apply -f .\svc.yaml
+
+kubectl delete -f .\deploy.yaml
+kubectl delete -f .\svc.yaml
+
+
+------------------------------------------------------
+
+kubectl create namespace my-namespace
+
+kubectl apply -f .\deploy.yaml -n my-namespace
+kubectl apply -f .\svc.yaml
+
+kubectl get all -n my-namespace
